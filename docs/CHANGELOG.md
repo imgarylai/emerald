@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/imgarylai/emerald/compare/v1.1.0...v1.2.0) (2022-04-03)
+
+
+### Features
+
+* **gh:** write theme version to package.json ([da78e49](https://github.com/imgarylai/emerald/commit/da78e4901b3280574712235cdff2e631fd989af6))
+
 # [1.1.0](https://github.com/imgarylai/emerald/compare/v1.0.0...v1.1.0) (2022-04-03)
 
 
