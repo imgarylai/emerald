@@ -1,0 +1,21 @@
+{{#match @custom.email_signup_for_logged_out_visitors "!=" "None"}}
+    {{#unless @member}}{{#if access}}
+        <section class="bg-gray-100 dark:bg-gray-900 py-16">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-semibold text-lg md:text-2xl text-emerald">
+                    {{#if @custom.email_signup_text}}
+                        {{@custom.email_signup_text}}
+                    {{else}}
+                        {{t "Sign up for more like this" }}
+                    {{/if}}
+                </h2>
+                <a class="bg-white text-gray-900 flex max-w-lg mx-auto rounded-md pl-4 pr-2 py-2 my-5 items-center" href="#/portal" data-portal>
+                    <div class="flex-grow text-left">{{t "youremail@example.com" }}</div>
+                    <span class="btn-emerald rounded-md px-4 py-2">Subscribe</span>
+                </a>
+                {{!-- ^ This looks like a form element, but it's just a link to Portal,
+                making the form validation and submission much simpler. --}}
+            </div>
+        </section>
+    {{/if}}{{/unless}}
+{{/match}}
