@@ -1,6 +1,6 @@
 {{!< default}}
 
-<div class="max-w-xl mx-auto px-2 md:px-0 grid grid-cols-1">
+<div class="max-w-xl mx-auto px-2 md:px-0 grid grid-cols-1 mb-4">
     {{#is "post"}}
         <h1 class="text-xl md:text-3xl font-semibold">Recent posts</h1>
     {{/is}}
@@ -12,5 +12,5 @@
             {{> post }} {{!-- partials/post.hbs --}}
         {{/foreach}}
     </div>
-    {{pagination}}
+    {{ pagination }}
 </div>

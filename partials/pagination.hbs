@@ -1,9 +1,9 @@
 <nav role="navigation" class="text-center">
     {{#if prev}}
-        <a href="{{page_url prev}}">&larr; Newer Posts</a>
+        <a href="{{page_url prev}}">&larr; {{t "Newer Posts"}}</a>
     {{/if}}
-    <span>Page {{page}} of {{pages}}</span>
+    <span>{{ t "Page {page} of {pages}" page=page pages=pages }}</span>
     {{#if next}}
-        <a href="{{page_url next}}">Older Posts &rarr;</a>
+        <a href="{{page_url next}}">{{ t "Older Posts" }} &rarr;</a>
     {{/if}}
 </nav>

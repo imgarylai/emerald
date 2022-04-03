@@ -17,6 +17,7 @@ module.exports = {
     ],
     mount: {
         './assets': '/assets',
+        './locales': '/locales',
         './': '/'
     },
     plugins: [

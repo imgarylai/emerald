@@ -1,0 +1,23 @@
+{
+  "Back": "Back",
+  "Go back home": "Go back home",
+  "Newer Posts": "Newer Posts",
+  "Older Posts": "Older Posts",
+  "Recent posts": "Recent posts",
+  "published at": " published at",
+  "Page {page} of {pages}": "Page {page} of {pages}",
+  "Subscribe": "Subscribe",
+  "Subscribe to {blogtitle}": "Subscribe to {blogtitle}",
+  "Subscribed!": "Subscribed!",
+  "Your email address": "Your email address",
+  "You've successfully subscribed to": "You've successfully subscribed to",
+  "Latest Posts": "Latest Posts",
+  " (Page %)": " (Page %)",
+  "youremail@example.com": "youremail@example.com",
+  "1 min read": "1 min read",
+  "% min read": "% min read",
+  "Theme": "Theme",
+  "Please check the URL in the address bar and try again": "Please check the URL in the address bar and try again",
+  "Sign up for more like this": "Sign up for more like this",
+  "Disqus - enable Javascript": "Please enable JavaScript to view the <a href=\"https://disqus.com/?ref_noscript\">comments powered by Disqus.</a>"
+}

@@ -1,0 +1,23 @@
+{
+  "Back": "返回",
+  "Go back home": "返回首頁",
+  "Newer Posts": "較新文章",
+  "Older Posts": "過往文章",
+  "Recent posts": "近期文章",
+  "published at": "發佈於",
+  "Page {page} of {pages}": "分頁：{page}／{pages}",
+  "Subscribe": "訂閱",
+  "Subscribe to {blogtitle}": "訂閱{blogtitle}",
+  "Subscribed!": "已訂閱！",
+  "Your email address": "你的 email",
+  "You've successfully subscribed to": "你已經成功訂閱",
+  "Latest Posts": "最新文章",
+  " (Page %)": " (分頁 %)",
+  "youremail@example.com": "youremail@example.com",
+  "1 min read": "1 分鐘",
+  "% min read": "% 分鐘",
+  "Theme": "樣式主題",
+  "Please check the URL in the address bar and try again": "麻煩再檢查一下網址連結，並稍後重試",
+  "Sign up for more like this": "訂閱收到更多精彩的內容",
+  "Disqus - enable Javascript": "請開啟 Javascript 才能使用<a href=\"https://disqus.com/?ref_noscript\"> Disqus </a>的留言功能。"
+}

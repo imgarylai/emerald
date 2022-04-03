@@ -8,33 +8,13 @@
             <div class="sm:ml-6">
                 <div class="sm:border-l sm:border-gray-200 sm:pl-6">
                     <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">{{message}}</h1>
-                    <p class="mt-1 text-base">Please check the URL in the address bar and try again.</p>
+                    <p class="mt-2 text-base">{{ t "Please check the URL in the address bar and try again" }}</p>
                 </div>
                 <div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
-                    <a href="{{@site.url}}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 btn-emerald"> Go back home </a>
+                    <a href="{{@site.url}}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 btn-emerald"> {{ t "Go back home" }} </a>
                 </div>
             </div>
         </main>
     </div>
 </div>
 
-<div>
-
-    {{#if errorDetails}}
-        <section>
-            <h4>Theme errors:</h4>
-            <ul>
-                {{#foreach errorDetails}}
-                    <li>
-                        <h5>{{{rule}}}</h5>
-
-                        {{#foreach failures}}
-                            <span><strong>Ref:</strong> {{ref}}</span><br>
-                            <span><strong>Message:</strong> {{message}}</span>
-                        {{/foreach}}
-                    </li>
-                {{/foreach}}
-            </ul>
-        </section>
-    {{/if}}
-</div>

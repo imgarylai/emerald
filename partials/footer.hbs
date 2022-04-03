@@ -1,4 +1,4 @@
-<footer class="flex py-6 justify-center text-center">
+<footer class="flex py-6 bg-white dark:bg-slate-900 justify-center text-center">
     <div>
         <div class="flex flex-row justify-center">
             {{#if @site.facebook}}
@@ -28,6 +28,6 @@
             </a>
         </div>
         <div class="text-xs py-2 antialiased"><a href="{{@site.url}}">{{@site.title}} &copy; {{date format="YYYY"}}</a></div>
-        <div class="text-xs py-2 antialiased">Powered by <a href="https://ghost.org/" target="_blank" rel="noopener noreferrer">Ghost</a> | Theme <a href="https://github.com/imgarylai/emerald" target="_blank" class="text-emerald">emerald</a> </div>
+        <div class="text-xs py-2 antialiased">Powered by <a href="https://ghost.org/" target="_blank" rel="noopener noreferrer">Ghost</a> | {{ t "Theme" }} <a href="https://github.com/imgarylai/emerald" target="_blank" class="text-emerald">emerald</a> </div>
     </div>
 </footer>

@@ -1,21 +1,26 @@
 {{!< default}}
 
 {{#post}}
-    <div class="px-4">
-        <article>
-            <h1 class="text-4xl font-extrabold ">{{title}}</h1>
-            <div class="py-2 text-sm text-gray-400 items-center">
-                <span>{{authors}} at</span>
-                <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM DD, YYYY"}}</time>
-                ・{{ reading_time }}
+    <div class="max-w-4xl mx-auto">
+        <div class="px-4">
+            <article>
+                <h1 class="text-4xl font-extrabold ">{{title}}</h1>
+                <div class="py-2 text-sm text-gray-400 items-center">
+                    <span>{{authors}}{{ t "published at" }}</span>
+                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM DD, YYYY"}}</time>
+                    ・{{ reading_time }}
+                </div>
+                <div class="max-w-none prose lg:prose-lg dark:prose-invert">
+                    {{content}}
+                </div>
+            </article>
+            <div class="py-6 items-center justify-center flex">
+                {{> tags }}
             </div>
-            <div class="max-w-none prose lg:prose-lg dark:prose-invert">
-                {{content}}
-            </div>
-        </article>
-        <div class="py-6 items-center justify-center flex">
-            {{> tags }}
         </div>
-        {{> comment}}
     </div>
+    <div class="max-w-4xl mx-auto mb-4">
+        {{> comment }}
+    </div>
+    {{> subscription }}
 {{/post}}
