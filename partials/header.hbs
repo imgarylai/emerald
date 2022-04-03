@@ -1,0 +1,29 @@
+<header class="z-50 px-2 md:px-0 py-4 md:py-6 bg-white dark:bg-slate-900 mb-2 md:mb-4">
+    <nav class="flex flex-row max-w-4xl mx-2 md:mx-auto items-center">
+        <div class="basis-1/2 md:basis-1/4 font-extrabold">
+            <a href="{{@site.url}}" class="text-lg md:text-2xl">
+                {{#if @site.logo}}
+                    <img src="{{@site.logo}}" alt="{{@site.title}}" />
+                {{else}}
+                    {{@site.title}}
+                {{/if}}
+            </a>
+        </div>
+        <div class="hidden md:flex grow grid grid-flow-col auto-cols-max justify-center">
+            {{#if @site.navigation}}
+                {{navigation}}
+            {{/if}}
+        </div>
+        <div class="basis-1/2 md:basis-1/4 text-right">
+            {{#if @member}}
+                <button class="font-semibold" data-portal="account">Account</button>
+                {{#unless @member.paid}}
+                    <button class="text-emerald-700 dark:text-emerald-300 font-semibold" data-portal="account/plans">Upgrade</button>
+                {{/unless}}
+            {{else}}
+                <button class="font-semibold mr-2" data-portal="signin">Login</button>
+                <button class="text-emerald-700 dark:text-emerald-300 font-semibold" data-portal="signup">Subscribe</button>
+            {{/if}}
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,4 @@
+{{#foreach navigation}}
+    <a class="{{slug}} mx-2 {{#if current}} underline underline-offset-8 decoration-emerald-700 dark:decoration-emerald-300 {{/if}}"
+       href="{{url absolute="true"}}">{{label}}</a>
+{{/foreach}}

@@ -1,0 +1,40 @@
+
+{{!< default}}
+
+<div class="min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
+    <div class="max-w-max mx-auto">
+        <main class="sm:flex">
+            <p class="text-4xl font-extrabold text-emerald-700 dark:text-emerald-300 sm:text-5xl">{{statusCode}}</p>
+            <div class="sm:ml-6">
+                <div class="sm:border-l sm:border-gray-200 sm:pl-6">
+                    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">{{message}}</h1>
+                    <p class="mt-1 text-base">Please check the URL in the address bar and try again.</p>
+                </div>
+                <div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
+                    <a href="{{@site.url}}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 btn-emerald"> Go back home </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<div>
+
+    {{#if errorDetails}}
+        <section>
+            <h4>Theme errors:</h4>
+            <ul>
+                {{#foreach errorDetails}}
+                    <li>
+                        <h5>{{{rule}}}</h5>
+
+                        {{#foreach failures}}
+                            <span><strong>Ref:</strong> {{ref}}</span><br>
+                            <span><strong>Message:</strong> {{message}}</span>
+                        {{/foreach}}
+                    </li>
+                {{/foreach}}
+            </ul>
+        </section>
+    {{/if}}
+</div>

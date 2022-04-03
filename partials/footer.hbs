@@ -1,0 +1,33 @@
+<footer class="flex py-6 justify-center text-center">
+    <div>
+        <div class="flex flex-row justify-center">
+            {{#if @site.facebook}}
+                <a class=""
+                   href="{{facebook_url @site.facebook}}" target="_blank"
+                   rel="noopener noreferrer" aria-label="Facebook">
+                    <svg class="icon">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+            {{/if}}
+            {{#if @site.twitter}}
+                <a class=""
+                   href="{{twitter_url @site.twitter}}" target="_blank"
+                   rel="noopener noreferrer" aria-label="Twitter">
+                    <svg class="icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+            {{/if}}
+            <a class=""
+               href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/"
+               target="_blank" rel="noopener noreferrer" aria-label="RSS">
+                <svg class="icon">
+                    <use xlink:href="#rss"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="text-xs py-2 antialiased"><a href="{{@site.url}}">{{@site.title}} &copy; {{date format="YYYY"}}</a></div>
+        <div class="text-xs py-2 antialiased">Powered by <a href="https://ghost.org/" target="_blank" rel="noopener noreferrer">Ghost</a> | Theme <a href="https://github.com/imgarylai/emerald" target="_blank" class="text-emerald">emerald</a> </div>
+    </div>
+</footer>

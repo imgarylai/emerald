@@ -1,0 +1,16 @@
+{{!< default}}
+
+<div class="max-w-xl mx-auto px-2 md:px-0 grid grid-cols-1">
+    {{#is "post"}}
+        <h1 class="text-xl md:text-3xl font-semibold">Recent posts</h1>
+    {{/is}}
+    {{#is "tag"}}
+        <h1 class="text-xl md:text-3xl font-semibold">#{{tag.name}}</h1>
+    {{/is}}
+    <div class="divide-y divide-slate-200 dark:divide-slate-500">
+        {{#foreach posts}}
+            {{> post }} {{!-- partials/post.hbs --}}
+        {{/foreach}}
+    </div>
+    {{pagination}}
+</div>
