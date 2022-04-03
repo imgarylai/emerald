@@ -11,9 +11,14 @@ module.exports = {
         changelogFile: "docs/CHANGELOG.md",
       },
     ],
+    "@semantic-release/npm",
     ["@semantic-release/github", {
       "assets": [
-        {"path": "dist/release.zip", "label": "Ghost theme - emerald"},
+        {
+          "path": "dist/release.zip",
+          "name": "emerald-${nextRelease.gitTag}",
+          "label": "emerald-${nextRelease.gitTag}"
+        },
       ]
     }],
     [

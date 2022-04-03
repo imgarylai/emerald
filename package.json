@@ -1,6 +1,7 @@
 {
   "name": "emerald",
   "version": "0.0.0",
+  "private": true,
   "description": "Theme for Ghost publishing platform",
   "keywords": [
     "ghost",
@@ -24,10 +25,10 @@
   ],
   "scripts": {
     "build": "snowpack build",
-    "dev": "snowpack build --watch",
-    "zip": "npm run build && cd dist && zip -r release .",
     "clean": "rimraf dist",
-    "test": "gscan ."
+    "dev": "snowpack build --watch",
+    "test": "gscan .",
+    "zip": "npm run build && cd dist && zip -r release ."
   },
   "config": {
     "card_assets": true,
@@ -112,6 +113,7 @@
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.4",
+    "@semantic-release/npm": "9.0.1",
     "@semantic-release/release-notes-generator": "10.0.3",
     "@snowpack/plugin-postcss": "1.4.3",
     "@tailwindcss/aspect-ratio": "0.4.0",
