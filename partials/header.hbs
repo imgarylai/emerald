@@ -1,7 +1,7 @@
-<header class="z-50 px-2 md:px-0 py-4 md:py-6 bg-white dark:bg-slate-900 mb-2 md:mb-4">
+<header class="sticky top-0 z-50 w-full md:px-0 py-2 md:py-3 bg-white dark:bg-slate-900">
     <nav class="flex flex-row max-w-4xl mx-2 md:mx-auto items-center justify-between">
         <div class="grow-1 md:grow-0 md:basis-1/4 font-extrabold justify-center">
-            <a href="{{@site.url}}" class="text-lg md:text-2xl items-center flex flex-row">
+            <a href="{{@site.url}}" class="text-lg md:text-xl items-center flex flex-row">
                 {{#if @site.logo}}
                     <img src="{{@site.logo}}" alt="{{@site.title}}" class=" h-12 w-12 mx-0" />
                 {{/if}}
@@ -24,10 +24,26 @@
                 <button class="text-emerald-700 dark:text-emerald-300 font-semibold" data-portal="signup">Subscribe</button>
             {{/if}}
         </div>
-        <div class="md:hidden justify-end">
+        <div id="menu-btn" class="md:hidden justify-end">
             <svg class="icon">
                 <use xlink:href="#menu"></use>
             </svg>
         </div>
     </nav>
 </header>
+<div id="mobile-menu" class="hidden fixed w-screen h-screen z-50 overscroll-auto  overflow-auto">
+    <div class="relative m-4 bg-gray-100 dark:bg-slate-800 rounded-xl">
+    <div id="close-btn" class="md:hidden justify-end absolute top-0 right-0">
+        <svg class="icon">
+            <use xlink:href="#close"></use>
+        </svg>
+    </div>
+    <ul class="p-4" role="menu">
+        {{#foreach navigation}}
+            <li role="menuitem" class="text-lg my-2 font-semibold flex">
+                <a href="{{url absolute="true"}}" class="w-full">{{label}}</a>
+            </li>
+        {{/foreach}}
+    </ul>
+    </div>
+</div>

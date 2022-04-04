@@ -1,7 +1,7 @@
 import {fitVids} from './fitvids';
 import {gallery} from './gallery';
-import {drakmode} from "./drakmode";
+import {menu} from "./menu";
 
 fitVids();
 gallery();
-drakmode();
+menu();

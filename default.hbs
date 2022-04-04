@@ -23,12 +23,12 @@
     </head>
     <body class="{{body_class}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Modern sans-serif"}} has-sans-body{{/match}}">
         {{> icons}}
-        <div class="flex flex-col h-screen">
-            <div>{{> header}}</div>
-            <div class="flex-grow">
+        <div class="flex flex-col">
+            {{> header}}
+            <div class="flex-grow z-0">
                 {{{body}}}
             </div>
-            <div>{{> footer }}</div>
+            {{> footer }}
         </div>
         {{ghost_foot}}
         <script type="module" src="{{asset "js/index.js"}}"></script>

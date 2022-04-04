@@ -1,10 +1,12 @@
 {{!< default}}
 
 {{#post}}
-    <article class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-extrabold mb-12">{{title}}</h1>
-        <div class="max-w-none prose lg:prose-lg dark:prose-invert">
-            {{content}}
+    <div class="max-w-4xl mx-auto">
+        <div class="px-4 py-2">
+            <h1 class="text-4xl font-extrabold">{{title}}</h1>
+            <div class="max-w-none prose lg:prose-lg dark:prose-invert">
+                {{content}}
+            </div>
         </div>
-    </article>
+    </div>
 {{/post}}
