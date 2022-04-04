@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/imgarylai/emerald/compare/v1.3.0...v1.3.1) (2022-04-04)
+
+
+### Bug Fixes
+
+* **ui:** stratch body and make footer sticky to bottom ([0658877](https://github.com/imgarylai/emerald/commit/0658877c8c98fed8d0465f023e288dddc02083ff))
+
 # [1.3.0](https://github.com/imgarylai/emerald/compare/v1.2.0...v1.3.0) (2022-04-04)
 
 
