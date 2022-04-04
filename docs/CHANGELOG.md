@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/imgarylai/emerald/compare/v1.3.1...v1.3.2) (2022-04-04)
+
+
+### Bug Fixes
+
+* fix version ([57f84c6](https://github.com/imgarylai/emerald/commit/57f84c61f49c84b9a6484a547cbc02ee34d1fe01))
+
 ## [1.3.1](https://github.com/imgarylai/emerald/compare/v1.3.0...v1.3.1) (2022-04-04)
 
 
