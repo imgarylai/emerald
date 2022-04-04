@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/imgarylai/emerald/compare/v1.2.0...v1.3.0) (2022-04-04)
+
+
+### Features
+
+* **ui:** add mobile menu support ([4bb5d15](https://github.com/imgarylai/emerald/commit/4bb5d159a4e6bdb2ae5d082710260b39c2fe31ec))
+* **ui:** support mobile menu ([1c51925](https://github.com/imgarylai/emerald/commit/1c51925ff70e53526af5ec827c6067677826d395))
+
 # [1.2.0](https://github.com/imgarylai/emerald/compare/v1.1.0...v1.2.0) (2022-04-03)
 
 
