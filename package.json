@@ -28,7 +28,8 @@
     "clean": "rimraf dist",
     "dev": "snowpack build --watch",
     "test": "gscan .",
-    "zip": "npm run build && cd dist && zip -r release ."
+    "zip": "npm run build && cd dist && zip -r release .",
+    "postversion": "npm run zip"
   },
   "config": {
     "card_assets": true,

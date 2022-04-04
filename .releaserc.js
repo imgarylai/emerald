@@ -24,7 +24,7 @@ module.exports = {
       "assets": [
         {
           "path": "dist/release.zip",
-          "name": "emerald-${nextRelease.gitTag}",
+          "name": "emerald-${nextRelease.gitTag}.zip",
           "label": "emerald-${nextRelease.gitTag}"
         },
       ]
